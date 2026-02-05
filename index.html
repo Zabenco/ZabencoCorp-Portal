@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZabencoCorp Intranet</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background: #f5f5f5; min-height: 100vh; }
+        .header { background: #1a1a2e; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; display: flex; align-items: center; gap: 10px; }
+        .nav { display: flex; gap: 20px; }
+        .nav a { color: #ccc; text-decoration: none; transition: color 0.3s; }
+        .nav a:hover { color: white; }
+        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 48px; margin-bottom: 10px; }
+        .hero p { opacity: 0.8; max-width: 600px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr); gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+        .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .card h3 { color: #1a1a2e; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+        .card-icon { width: 40px; height: 40px; background: #e8f4f8; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+        .card p { color: #666; font-size: 14px; line-height: 1.6; }
+        .status { display: flex; gap: 8px; margin-top: 12px; }
+        .status-dot { width: 8px; height: 8px; border-radius: 50%; background: #10b981; }
+        .status-dot.warning { background: #f59e0b; }
+        .status-dot.danger { background: #ef4444; }
+        .quick-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr); gap: 12px; margin-top: 16px; }
+        .quick-link { padding: 12px; background: #f8fafc; border-radius: 8px; text-decoration: none; color: #1a1a2e; transition: background 0.3s; display: block; text-align: center; font-size: 14px; }
+        .quick-link:hover { background: #e2e8f0; }
+        .footer { background: #1a1a2e; color: #94a3b8; padding: 24px; text-align: center; margin-top: 40px; }
+        .footer a { color: #60a5fa; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <nav class="header">
+        <div class="logo">
+            <span>🏢</span>
+            ZabencoCorp Intranet
+        </div>
+        <div class="nav">
+            <a href="#">Dashboard</a>
+            <a href="#">Directory</a>
+            <a href="#">Tools</a>
+            <a href="#">HR Portal</a>
+            <a href="#">IT Support</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to ZabencoCorp Intranet</h1>
+        <p>Your central hub for corporate resources, tools, and services. Everything you need, one place.
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <h3><div class="card-icon>📊</div> Service Status</h3>
+            <p>Real-time monitoring of ZabencoCorp services</p>
+            <div class="status">
+                <div class="status-dot"></div> All systems operational
+            </div>
+            <div class="quick-links">
+                <a href="#" class="quick-link">View Dashboard
+            <a href="#" class="quick-link">Report Issue
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><div class="card-icon">👥
+            <div>Directory</h3>
+            <p>Find colleagues, teams, and locations</p>
+            <div class="quick-links">
+                <a href="#" class="quick-link">Search People
+                <a href="#" class="quick-link">Org Chart
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><div class="card-icon">🔧</div> IT Support</h3>
+            <p>Submit tickets, request hardware, access IT resources</p>
+            <div class="quick-links">
+                <a href="#" class="quick-link">New Ticket
+                <a href="#" class="quick-link">IT Knowledge Base
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><div class="card-icon">📅</div> HR Portal</h3>
+            <p>Benefits, time off, policies, employee handbook</p>
+            <div class="quick-links">
+                <a href="#" class="quick-link">Request PTO
+                <a href="#" class="quick-link">Benefits
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><div class="card-icon">📁</div> Document Center</h3>
+            <p>Policies, templates, procedural guides</p>
+            <div class="quick-links">
+                <a href="#" class="quick-link">Policy Docs
+                <a href="#" class="quick-link">Forms
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><div class="card-icon">💼</div> Career Hub</h3>
+            <p>Internal jobs, training, development</p>
+            <div class="quick-links">
+                <a href="#" class="quick-link">Job Board
+                <a href="#" class="quick-link">Training
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 ZabencoCorp Internal Use Only | <a href="#">IT Support</a> | <a href="#">Report Bug</a>
+    </footer>
+</body>
+</html>
