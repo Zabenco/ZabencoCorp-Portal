@@ -5,8 +5,8 @@
 
 $host = 'zabencocorp-db-01.cfioyem0wxq4.us-east-2.rds.amazonaws.com';
 $dbname = 'zabencocorp_portal';
-$user = 'zabencocorp';
-$password = 'YOUR_DB_PASSWORD_HERE';
+$user = 'zabencorp';
+$password = 'zFle3ux!1';
 
 try {
     $pdo = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password);
